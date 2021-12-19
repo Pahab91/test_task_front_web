@@ -5,7 +5,8 @@ link_main = 'https://phptravels.com/demo/'
 link_cms = 'https://phptravels.net/api/admin/cms'
 link_page_title = 'https://phptravels.net/api/Test-page'
 
-
+''' Для запуска теста использовать в терминале команду: 
+pytest test_front_web.py'''
 def test_task_front_web(browser):
     browser.get(link_main)
     button = browser.find_element(By.CSS_SELECTOR, '[href="//www.phptravels.net/admin"].btn')
